@@ -1,4 +1,6 @@
-# COMBO ![my workflow](https://github.com/kimhochstedler/COMBO/actions/workflows/r.yml/badge.svg)
+# COMBO
+![my workflow](https://github.com/kimberlywebb/COMBO/actions/workflows/r.yml/badge.svg) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/COMBO)](https://cran.r-project.org/package=COMBO)  [![downlaods-badge](http://cranlogs.r-pkg.org/badges/grand-total/COMBO)](
+https://cran.r-project.org/package=COMBO)
 
 ![ ](https://github.com/kimhochstedler/COMBO/blob/main/small_logo.png?raw=true)
 
@@ -28,7 +30,11 @@ Installation
 --------------------------------------------------
 
 ``` r
+# Install from CRAN
+install.packages("COMBO")
+
 # Install the development version from GitHub:
 # install.packages("devtools")
-devtools::install_github("kimhochstedler/COMBO")
+devtools::install_github("kimberlywebb/COMBO")
 ```
+Please note that COMBO requires JAGS to be installed. JAGS can be downloaded from [https://sourceforge.net/projects/mcmc-jags/](https://sourceforge.net/projects/mcmc-jags/).

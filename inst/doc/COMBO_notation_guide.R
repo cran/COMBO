@@ -1,8 +1,6 @@
 ## ----setup, include=FALSE-----------------------------------------------------
 knitr::opts_chunk$set(echo = FALSE)
 
-library(kableExtra)
-
 ## -----------------------------------------------------------------------------
 Term <- c("$X$", "$Z$", "$Y$", "$y_{ij}$", "$Y^*$", "$y^*_{ik}$",
           "True Outcome Mechanism", "Observation Mechanism",
@@ -41,7 +39,8 @@ Description <- c("Predictor matrix for the true outcome.",
 
 notation_table <- data.frame(Term, Definition, Description)
 
-## -----------------------------------------------------------------------------
-kableExtra::kbl(notation_table, escape = FALSE, booktabs = TRUE) %>%
-  kableExtra::kable_styling(latex_options = "HOLD_position")
+## ----results = "asis"---------------------------------------------------------
+library(xtable)
+xtable_notation <- xtable(notation_table)
+print(xtable(notation_table), type = "html", include.rownames=FALSE)
 

@@ -28,230 +28,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
   }
 });
 </script>
-<script>$(document).ready(function(){
-    if (typeof $('[data-toggle="tooltip"]').tooltip === 'function') {
-        $('[data-toggle="tooltip"]').tooltip();
-    }
-    if ($('[data-toggle="popover"]').popover === 'function') {
-        $('[data-toggle="popover"]').popover();
-    }
-});
-</script>
-<style type="text/css">
-.lightable-minimal {
-border-collapse: separate;
-border-spacing: 16px 1px;
-width: 100%;
-margin-bottom: 10px;
-}
-.lightable-minimal td {
-margin-left: 5px;
-margin-right: 5px;
-}
-.lightable-minimal th {
-margin-left: 5px;
-margin-right: 5px;
-}
-.lightable-minimal thead tr:last-child th {
-border-bottom: 2px solid #00000050;
-empty-cells: hide;
-}
-.lightable-minimal tbody tr:first-child td {
-padding-top: 0.5em;
-}
-.lightable-minimal.lightable-hover tbody tr:hover {
-background-color: #f5f5f5;
-}
-.lightable-minimal.lightable-striped tbody tr:nth-child(even) {
-background-color: #f5f5f5;
-}
-.lightable-classic {
-border-top: 0.16em solid #111111;
-border-bottom: 0.16em solid #111111;
-width: 100%;
-margin-bottom: 10px;
-margin: 10px 5px;
-}
-.lightable-classic tfoot tr td {
-border: 0;
-}
-.lightable-classic tfoot tr:first-child td {
-border-top: 0.14em solid #111111;
-}
-.lightable-classic caption {
-color: #222222;
-}
-.lightable-classic td {
-padding-left: 5px;
-padding-right: 5px;
-color: #222222;
-}
-.lightable-classic th {
-padding-left: 5px;
-padding-right: 5px;
-font-weight: normal;
-color: #222222;
-}
-.lightable-classic thead tr:last-child th {
-border-bottom: 0.10em solid #111111;
-}
-.lightable-classic.lightable-hover tbody tr:hover {
-background-color: #F9EEC1;
-}
-.lightable-classic.lightable-striped tbody tr:nth-child(even) {
-background-color: #f5f5f5;
-}
-.lightable-classic-2 {
-border-top: 3px double #111111;
-border-bottom: 3px double #111111;
-width: 100%;
-margin-bottom: 10px;
-}
-.lightable-classic-2 tfoot tr td {
-border: 0;
-}
-.lightable-classic-2 tfoot tr:first-child td {
-border-top: 3px double #111111;
-}
-.lightable-classic-2 caption {
-color: #222222;
-}
-.lightable-classic-2 td {
-padding-left: 5px;
-padding-right: 5px;
-color: #222222;
-}
-.lightable-classic-2 th {
-padding-left: 5px;
-padding-right: 5px;
-font-weight: normal;
-color: #222222;
-}
-.lightable-classic-2 tbody tr:last-child td {
-border-bottom: 3px double #111111;
-}
-.lightable-classic-2 thead tr:last-child th {
-border-bottom: 1px solid #111111;
-}
-.lightable-classic-2.lightable-hover tbody tr:hover {
-background-color: #F9EEC1;
-}
-.lightable-classic-2.lightable-striped tbody tr:nth-child(even) {
-background-color: #f5f5f5;
-}
-.lightable-material {
-min-width: 100%;
-white-space: nowrap;
-table-layout: fixed;
-font-family: Roboto, sans-serif;
-border: 1px solid #EEE;
-border-collapse: collapse;
-margin-bottom: 10px;
-}
-.lightable-material tfoot tr td {
-border: 0;
-}
-.lightable-material tfoot tr:first-child td {
-border-top: 1px solid #EEE;
-}
-.lightable-material th {
-height: 56px;
-padding-left: 16px;
-padding-right: 16px;
-}
-.lightable-material td {
-height: 52px;
-padding-left: 16px;
-padding-right: 16px;
-border-top: 1px solid #eeeeee;
-}
-.lightable-material.lightable-hover tbody tr:hover {
-background-color: #f5f5f5;
-}
-.lightable-material.lightable-striped tbody tr:nth-child(even) {
-background-color: #f5f5f5;
-}
-.lightable-material.lightable-striped tbody td {
-border: 0;
-}
-.lightable-material.lightable-striped thead tr:last-child th {
-border-bottom: 1px solid #ddd;
-}
-.lightable-material-dark {
-min-width: 100%;
-white-space: nowrap;
-table-layout: fixed;
-font-family: Roboto, sans-serif;
-border: 1px solid #FFFFFF12;
-border-collapse: collapse;
-margin-bottom: 10px;
-background-color: #363640;
-}
-.lightable-material-dark tfoot tr td {
-border: 0;
-}
-.lightable-material-dark tfoot tr:first-child td {
-border-top: 1px solid #FFFFFF12;
-}
-.lightable-material-dark th {
-height: 56px;
-padding-left: 16px;
-padding-right: 16px;
-color: #FFFFFF60;
-}
-.lightable-material-dark td {
-height: 52px;
-padding-left: 16px;
-padding-right: 16px;
-color: #FFFFFF;
-border-top: 1px solid #FFFFFF12;
-}
-.lightable-material-dark.lightable-hover tbody tr:hover {
-background-color: #FFFFFF12;
-}
-.lightable-material-dark.lightable-striped tbody tr:nth-child(even) {
-background-color: #FFFFFF12;
-}
-.lightable-material-dark.lightable-striped tbody td {
-border: 0;
-}
-.lightable-material-dark.lightable-striped thead tr:last-child th {
-border-bottom: 1px solid #FFFFFF12;
-}
-.lightable-paper {
-width: 100%;
-margin-bottom: 10px;
-color: #444;
-}
-.lightable-paper tfoot tr td {
-border: 0;
-}
-.lightable-paper tfoot tr:first-child td {
-border-top: 1px solid #00000020;
-}
-.lightable-paper thead tr:last-child th {
-color: #666;
-vertical-align: bottom;
-border-bottom: 1px solid #00000020;
-line-height: 1.15em;
-padding: 10px 5px;
-}
-.lightable-paper td {
-vertical-align: middle;
-border-bottom: 1px solid #00000010;
-line-height: 1.15em;
-padding: 7px 5px;
-}
-.lightable-paper.lightable-hover tbody tr:hover {
-background-color: #F9EEC1;
-}
-.lightable-paper.lightable-striped tbody tr:nth-child(even) {
-background-color: #00000008;
-}
-.lightable-paper.lightable-striped tbody td {
-border: 0;
-}
-</style>
 
 <style type="text/css">
 code{white-space: pre-wrap;}
@@ -468,356 +244,359 @@ Misclassification Model</h1>
 
 <div id="notation" class="section level2">
 <h2>Notation</h2>
-<p>This guide is designed to summarize key notation and quantities used
-the <em>COMBO</em> R Package and associated publications.</p>
-<table class="table" style="margin-left: auto; margin-right: auto;">
-<thead>
+This guide is designed to summarize key notation and quantities used the
+<em>COMBO</em> R Package and associated publications.
+<!-- html table generated in R 4.3.1 by xtable 1.8-4 package -->
+<!-- Sat Jul  6 15:28:08 2024 -->
+<table border="1">
 <tr>
-<th style="text-align:left;">
+<th>
 Term
 </th>
-<th style="text-align:left;">
+<th>
 Definition
 </th>
-<th style="text-align:left;">
+<th>
 Description
 </th>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td style="text-align:left;">
+<td>
 <span class="math inline">\(X\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 –
 </td>
-<td style="text-align:left;">
+<td>
 Predictor matrix for the true outcome.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(Z\)</span>
+<td>
+<span class="math inline">\(Z^{(1)}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 –
 </td>
-<td style="text-align:left;">
+<td>
 Predictor matrix for the first-stage observed outcome, conditional on
 the true outcome.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-V
+<td>
+<span class="math inline">\(Z^{(2)}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 –
 </td>
-<td style="text-align:left;">
+<td>
 Predictor matrix for the second-stage observed outcome, conditional on
 the true outcome and first-stage observed outcome.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td>
 <span class="math inline">\(Y\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 <span class="math inline">\(Y \in \{1, 2\}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 True binary outcome. Reference category is 2.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td>
 <span class="math inline">\(y_{ij}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 <span class="math inline">\(\mathbb{I}\{Y_i = j\}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 Indicator for the true binary outcome.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(Y^*\)</span>
+<td>
+<span class="math inline">\(Y^{*(1)}\)</span>
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(Y^* \in \{1, 2\}\)</span>
+<td>
+<span class="math inline">\(Y^{*(1)} \in \{1, 2\}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 First-stage observed binary outcome. Reference category is 2.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(y^*_{ik}\)</span>
+<td>
+<span class="math inline">\(y^{*(1)}_{ik}\)</span>
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(\mathbb{I}\{Y^*_i = k\}\)</span>
+<td>
+<span class="math inline">\(\mathbb{I}\{Y^{*(1)}_i = k\}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 Indicator for the first-stage observed binary outcome.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\tilde{Y}\)</span>
+<td>
+<span class="math inline">\(Y^{*(2)}\)</span>
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(\tilde{Y} \in \{1, 2\}\)</span>
+<td>
+<span class="math inline">\(Y^{*(2)} \in \{1, 2\}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 Second-stage observed binary outcome. Reference category is 2.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\tilde{y}_{i \ell}\)</span>
+<td>
+<span class="math inline">\(y^{*(2)}_{i \ell}\)</span>
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(\mathbb{I}\{\tilde{Y}_i = \ell \}\)</span>
+<td>
+<span class="math inline">\(\mathbb{I}\{Y^{*(2)}_i = \ell \}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 Indicator for the second-stage observed binary outcome.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td>
 True Outcome Mechanism
 </td>
-<td style="text-align:left;">
+<td>
 <span class="math inline">\(\text{logit} \{ P(Y = j | X ; \beta) \} =
 \beta_{j0} + \beta_{jX} X\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 Relationship between <span class="math inline">\(X\)</span> and the true
 outcome, <span class="math inline">\(Y\)</span>.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td>
 First-Stage Observation Mechanism
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(\text{logit}\{ P(Y^* = k | Y = j, Z ;
-\gamma) \} = \gamma_{kj0} + \gamma_{kjZ} Z\)</span>
+<td>
+<span class="math inline">\(\text{logit}\{ P(Y^{*(1)} = k | Y = j,
+Z^{(1)} ; \gamma^{(1)}) \} = \gamma^{(1)}_{kj0} +
+\gamma^{(1)}_{kjZ^{(1)}} Z^{(1)}\)</span>
 </td>
-<td style="text-align:left;">
-Relationship between <span class="math inline">\(Z\)</span> and the
-first-stage observed outcome, <span class="math inline">\(Y^*\)</span>,
-given the true outcome <span class="math inline">\(Y\)</span>.
+<td>
+Relationship between <span class="math inline">\(Z^{(1)}\)</span> and
+the first-stage observed outcome, <span class="math inline">\(Y^{*(1)}\)</span>, given the true outcome <span class="math inline">\(Y\)</span>.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td>
 Second-Stage Observation Mechanism
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(\text{logit}\{ P(\tilde{Y} = \ell | Y^* = k,
-Y = j, V ; \delta) \} = \delta_{\ell kj0} + \delta_{\ell kjV} V\)</span>
+<td>
+<span class="math inline">\(\text{logit}\{ P(Y^{*(2)} = \ell | Y^{*(1)}
+= k, Y = j, Z^{(2)} ; \gamma^{(2)}) \} = \gamma^{(2)}_{\ell kj0} +
+\gamma^{(2)}_{\ell kjZ^{(2)}} Z^{(2)}\)</span>
 </td>
-<td style="text-align:left;">
-Relationship between <span class="math inline">\(V\)</span> and the
-second-stage observed outcome, <span class="math inline">\(\tilde{Y}\)</span>, given the first-stage observed
-outcome, <span class="math inline">\(Y^*\)</span>, and the true outcome
-<span class="math inline">\(Y\)</span>.
+<td>
+Relationship between <span class="math inline">\(Z^{(2)}\)</span> and
+the second-stage observed outcome, <span class="math inline">\(Y^{*(2)}\)</span>, given the first-stage observed
+outcome, <span class="math inline">\(Y^{*(1)}\)</span>, and the true
+outcome <span class="math inline">\(Y\)</span>.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td>
 <span class="math inline">\(\pi_{ij}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 <span class="math inline">\(P(Y_i = j | X ; \beta) =
 \frac{\text{exp}\{\beta_{j0} + \beta_{jX} X_i\}}{1 +
 \text{exp}\{\beta_{j0} + \beta_{jX} X_i\}}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 Response probability for individual <span class="math inline">\(i\)</span>’s true outcome category.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\pi^*_{ikj}\)</span>
+<td>
+<span class="math inline">\(\pi^{*(1)}_{ikj}\)</span>
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(P(Y^*_i = k | Y_i = j, Z ; \gamma) =
-\frac{\text{exp}\{\gamma_{kj0} + \gamma_{kjZ} Z_i\}}{1 +
-\text{exp}\{\gamma_{kj0} + \gamma_{kjZ} Z_i\}}\)</span>
+<td>
+<span class="math inline">\(P(Y^{*(1)}_i = k | Y = j, Z^{(1)} ;
+\gamma^{(1)}) = \frac{\text{exp}\{\gamma^{(1)}_{kj0} +
+\gamma^{(1)}_{kjZ^{(1)}} Z_i^{(1)}\}}{1 + \text{exp}\{\gamma^{(1)}_{kj0}
++ \gamma^{(1)}_{kjZ^{(1)}} Z_i^{(1)}\}}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 Response probability for individual <span class="math inline">\(i\)</span>’s first-stage observed outcome
 category, conditional on the true outcome.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\tilde{\pi}_{i \ell kj}\)</span>
+<td>
+<span class="math inline">\(\pi^{*(2)}_{i \ell kj}\)</span>
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(P(\tilde{Y}_i = \ell | Y^*_i = k, Y_i = j, Z
-; \delta) = \frac{\text{exp}\{\delta_{\ell kj0} + \delta_{\ell kjV}
-V_i\}}{1 + \text{exp}\{\delta_{\ell kj0} + \delta_{\ell kjV}
-V_i\}}\)</span>
+<td>
+<span class="math inline">\(P(Y^{*(2)}_i = \ell | Y^{*(1)} = k, Y = j,
+Z^{(2)} ; \gamma^{(2)}) = \frac{\text{exp}\{\gamma^{(2)}_{\ell kj0} +
+\gamma^{(2)}_{\ell kjZ^{(2)}} Z_i^{(2)}\}}{1 +
+\text{exp}\{\gamma^{(2)}_{\ell kj0} + \gamma^{(2)}_{\ell kjZ^{(2)}}
+Z_i^{(2)}\}}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 Response probability for individual <span class="math inline">\(i\)</span>’s second-stage observed outcome
 category, conditional on the first-stage observed outcome and the true
 outcome.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\pi^*_{ik}\)</span>
+<td>
+<span class="math inline">\(\pi^{*(1)}_{ik}\)</span>
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(P(Y^*_i = k | Y_i, X, Z ; \gamma) = \sum_{j
-= 1}^2 \pi^*_{ikj} \pi_{ij}\)</span>
+<td>
+<span class="math inline">\(P(Y^{*(1)}_i = k | X, Z^{(1)} ;
+\gamma^{(1)}) = \sum_{j = 1}^2 \pi^{*(1)}_{ikj} \pi_{ij}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 Response probability for individual <span class="math inline">\(i\)</span>’s first-stage observed outcome
 cateogry.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\pi^*_{jj}\)</span>
+<td>
+<span class="math inline">\(\pi^{*(1)}_{jj}\)</span>
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(P(Y^* = j | Y = j, Z ; \gamma) = \sum_{i =
-1}^N \pi^*_{ijj}\)</span>
+<td>
+<span class="math inline">\(P(Y^{*(1)} = j | Y = j, Z^{(1)} ;
+\gamma^{(1)}) = \sum_{i = 1}^N \pi^{*(1)}_{ijj}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 Average probability of first-stage correct classification for category
 <span class="math inline">\(j\)</span>.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\tilde{\pi}_{jjj}\)</span>
+<td>
+<span class="math inline">\(\pi^{*(2)}_{jjj}\)</span>
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(P(\tilde{Y} = j | Y^* = j, Y = j, Z ;
-\delta) = \sum_{i = 1}^N \tilde{\pi}_{ijjj}\)</span>
+<td>
+<span class="math inline">\(P(Y^{*(2)} = j | Y^{*(1)}_i = j, Y = j,
+Z^{(2)} ; \gamma^{(2)}) = \sum_{i = 1}^N \pi^{*(2)}_{ijjj}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 Average probability of first-stage and second-stage correct
 classification for category <span class="math inline">\(j\)</span>.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td>
 First-Stage Sensitivity
 </td>
-<td style="text-align:left;">
-<span class="math inline">\(P(Y^* = 1 | Y = 1, Z ; \gamma) = \sum_{i =
-1}^N \pi^*_{i11}\)</span>
+<td>
+<span class="math inline">\(P(Y^{*(1)} = 1 | Y = 1, Z^{(1)} ;
+\gamma^{(1)}) = \sum_{i = 1}^N \pi^{*(1)}_{i11}\)</span>
 </td>
-<td style="text-align:left;">
-True positive rate. Average probability of observing outcome <span class="math inline">\(k = 1\)</span>, given the true outcome <span class="math inline">\(j = 1\)</span>.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Second-Stage Specificity
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(P(Y^* = 2 | Y = 2, Z ; \gamma) = \sum_{i =
-1}^N \pi^*_{i22}\)</span>
-</td>
-<td style="text-align:left;">
-True negative rate. Average probability of observing outcome <span class="math inline">\(k = 2\)</span>, given the true outcome <span class="math inline">\(j = 2\)</span>.
+<td>
+True positive rate. Average probability of observing first-stage outcome
+<span class="math inline">\(k = 1\)</span>, given the true outcome <span class="math inline">\(j = 1\)</span>.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td>
+First-Stage Specificity
+</td>
+<td>
+<span class="math inline">\(P(Y^{*(1)} = 2 | Y = 2, Z^{(1)} ;
+\gamma^{(1)}) = \sum_{i = 1}^N \pi^{*(1)}_{i22}\)</span>
+</td>
+<td>
+True negative rate. Average probability of observing first-stage outcome
+<span class="math inline">\(k = 2\)</span>, given the true outcome <span class="math inline">\(j = 2\)</span>.
+</td>
+</tr>
+<tr>
+<td>
 <span class="math inline">\(\beta_X\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 –
 </td>
-<td style="text-align:left;">
+<td>
 Association parameter of interest in the true outcome mechanism.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\gamma_{11Z}\)</span>
+<td>
+<span class="math inline">\(\gamma^{(1)}_{11Z^{(1)}}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 –
 </td>
-<td style="text-align:left;">
+<td>
 Association parameter of interest in the first-stage observation
 mechanism, given <span class="math inline">\(j=1\)</span>.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\gamma_{12Z}\)</span>
+<td>
+<span class="math inline">\(\gamma^{(1)}_{12Z^{(1)}}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 –
 </td>
-<td style="text-align:left;">
+<td>
 Association parameter of interest in the first-stage observation
 mechanism, given <span class="math inline">\(j=2\)</span>.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\delta_{111Z}\)</span>
+<td>
+<span class="math inline">\(\gamma^{(2)}_{111Z^{(2)}}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 –
 </td>
-<td style="text-align:left;">
+<td>
 Association parameter of interest in the second-stage observation
 mechanism, given <span class="math inline">\(k = 1\)</span> and <span class="math inline">\(j = 1\)</span>.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\delta_{121Z}\)</span>
+<td>
+<span class="math inline">\(\gamma^{(2)}_{121Z^{(2)}}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 –
 </td>
-<td style="text-align:left;">
+<td>
 Association parameter of interest in the second-stage observation
 mechanism, given <span class="math inline">\(k = 2\)</span> and <span class="math inline">\(j = 1\)</span>.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\delta_{112Z}\)</span>
+<td>
+<span class="math inline">\(\gamma^{(2)}_{112Z^{(2)}}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 –
 </td>
-<td style="text-align:left;">
+<td>
 Association parameter of interest in the second-stage observation
 mechanism, given <span class="math inline">\(k = 1\)</span> and <span class="math inline">\(j = 2\)</span>.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-<span class="math inline">\(\delta_{122Z}\)</span>
+<td>
+<span class="math inline">\(\gamma^{(2)}_{122Z^{(2)}}\)</span>
 </td>
-<td style="text-align:left;">
+<td>
 –
 </td>
-<td style="text-align:left;">
+<td>
 Association parameter of interest in the second-stage observation
 mechanism, given <span class="math inline">\(k = 2\)</span> and <span class="math inline">\(j = 2\)</span>.
 </td>
 </tr>
-</tbody>
 </table>
 </div>
 
