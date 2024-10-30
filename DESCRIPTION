@@ -1,6 +1,6 @@
 Package: COMBO
 Title: Correcting Misclassified Binary Outcomes in Association Studies
-Version: 1.1.0
+Version: 1.2.0
 Authors@R: 
     person("Kimberly", "Hochstedler Webb",
            email = "kah343@cornell.edu", role = c("aut", "cre"))
@@ -20,7 +20,7 @@ Suggests: knitr (>= 1.40), testthat (>= 3.0.0), devtools (>= 2.4.5),
 SystemRequirements: JAGS (http://mcmc-jags.sourceforge.net)
 License: MIT + file LICENSE
 Encoding: UTF-8
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 VignetteBuilder: knitr
 Collate: 'sum_every_n1.R' 'sum_every_n.R' 'pistar_compute.R'
         'pi_compute.R' 'COMBO_data.R' 'expit.R'
@@ -33,16 +33,17 @@ Collate: 'sum_every_n1.R' 'sum_every_n.R' 'pistar_compute.R'
         'pistar_by_chain.R' 'naive_jags_picker.R'
         'naive_model_picker.R' 'jags_picker.R' 'model_picker.R'
         'COMBO_MCMC.R' 'model_picker_2stage.R' 'COMBO_MCMC_2stage.R'
-        'LSAC_data.R' 'check_and_fix_chains_2stage.R'
-        'jags_picker_2stage.R' 'label_switch_2stage.R'
-        'misclassification_prob.R' 'misclassification_prob2.R'
-        'naive_jags_picker_2stage.R' 'naive_loglik_2stage.R'
-        'naive_model_picker_2stage.R' 'pistar_by_chain_2stage.R'
-        'pistar_compute_for_chains_2stage.R' 'pitilde_by_chain.R'
-        'pitilde_compute_for_chains.R' 'true_classification_prob.R'
+        'LSAC_data.R' 'VPRAI_synthetic_data.R'
+        'check_and_fix_chains_2stage.R' 'jags_picker_2stage.R'
+        'label_switch_2stage.R' 'misclassification_prob.R'
+        'misclassification_prob2.R' 'naive_jags_picker_2stage.R'
+        'naive_loglik_2stage.R' 'naive_model_picker_2stage.R'
+        'pistar_by_chain_2stage.R' 'pistar_compute_for_chains_2stage.R'
+        'pitilde_by_chain.R' 'pitilde_compute_for_chains.R'
+        'true_classification_prob.R'
 LazyData: true
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2024-07-06 19:28:11 UTC; kimho
+Packaged: 2024-10-30 15:03:41 UTC; KIW58
 Repository: CRAN
-Date/Publication: 2024-07-06 22:22:08 UTC
+Date/Publication: 2024-10-30 15:50:02 UTC
